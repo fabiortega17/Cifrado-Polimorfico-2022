@@ -12,13 +12,10 @@ Lo subo en 2026 porque:
 - Sirve para que alguien más vea: “ok, yo también puedo intentarlo aunque no sepa nada…”
 
 **No lo uses para nada importante.**
-Pero sí puedes aprender de cómo pensaba, cómo fui iterando y por qué llegué a creer que 10! × 10 era “casi inquebrantable” en ese momento.
-
-Si te sirve de algo (o te saca una sonrisa), ya cumplió su propósito.
 
 ## 📋 Descripción
 
-**CodexSegur** es un sistema de cifrado polimórfico que implementa un algoritmo de sustitución variable. A diferencia de los cifrados determinísticos tradicionales, este sistema genera diferentes salidas cifradas para el mismo texto de entrada, incluso usando la misma clave.
+**Este sistema de cifrado polimórfico** implementa un algoritmo de sustitución variable. A diferencia de los cifrados determinísticos tradicionales, este sistema genera diferentes salidas cifradas para el mismo texto de entrada, incluso usando la misma clave.
 
 ### ¿Qué es el Cifrado Polimórfico?
 
@@ -98,7 +95,7 @@ Este sistema nació de la necesidad de proteger datos en entornos web limitados 
 
 ---
 
-### 🧮 Análisis de Robustez (Perspectiva 2026)
+### 🧮 Análisis de Robustez (Perspectiva 2026) por IA
 
 El sistema se basa en un **proceso secuencial de múltiples pasos** donde cada acierto depende del anterior. Un solo error en la cadena invalida el descifrado completo.
 
@@ -126,25 +123,6 @@ Incluso conociendo el algoritmo, la resolución por fuerza bruta enfrenta un esp
 
 ---
 
-### 🛠️ proceso Técnico:
-
-Se incluyó en el código una técnica de reconstrucción de matrices que demuestra el uso avanzado de JavaScript moderno:
-
-```javascript
-import { CodifiTex } from "./src/CodEncryp.js";
-import { MiTex } from "./src/CodEscryp.js";
-
-const config = { access: "admin-2022", token: "xyz-789" };
-
-// Cifrado Polimórfico (Hash diferente cada vez)
-const hash = CodifiTex(config);
-
-// Recuperación íntegra de Objetos JSON
-const originalData = MiTex(hash);
-```
-
----
-
 ## 🛠️ Tecnologías y Portabilidad
 
 - **Core**: JavaScript puro (ES6+).
@@ -162,6 +140,6 @@ Este proyecto se expone como un **activo de ingeniería educativa**. Documenta l
 Desarrollado por **Fabio Ortega** (2022).
 Un testimonio de cómo la lógica pura puede construir barreras de seguridad sin necesidad de herramientas externas.
 
-# ⚠️ Este Readme es redactado en 2026 con ayuda de IA, pero respetando la logica original del proyecto 2022, no lo utilices para fines de seguridad en producción
+Este Readme es redactado en 2026 con ayuda de IA, pero respetando la logica original del proyecto 2022, no lo utilices para fines de seguridad en producción
 
 ## ⭐ Si este proyecto te ayuda a entender cifrado polimórfico, considera darle una estrella!
